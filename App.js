@@ -9,14 +9,7 @@ import {
 } from 'react-native';
 import { Header } from 'react-native-elements';
 
-export default class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      text: '',
-      chunks: [],
-    };
-  }
+//passo 1
   render() {
     return (
       <View style={styles.container}>
@@ -33,20 +26,8 @@ export default class App extends React.Component {
             uri:
               'https://www.shareicon.net/data/128x128/2016/01/01/228213_monkey_128x128.png',
           }}></Image>
-         <TextInput
-          style={styles.inputBox}
-          onChangeText={text => {
-            this.setState({ text: text });
-          }}
-        />
-        <TouchableOpacity
-          style={styles.goButton}
-          onPress={() => {
-            this.setState({ displayText: this.state.text });
-          }}>
-          <Text style={styles.buttonText}>IR</Text>
-        </TouchableOpacity>
-        <Text style={styles.displayText}>{this.state.displayText}</Text>
+        //passo 2
+        
      
       </View>
     );
